@@ -40,7 +40,7 @@ public class Program {
             emails.forEach(System.out::println);
 
             EmployeeService es = new EmployeeService();
-            double sum = es.filteredSum(list,employee -> employee.getName().charAt(0) == 'T');
+            double sum = es.filteredSum(list,employee -> employee.getName().charAt(0) == 'M');
 
             System.out.println("Sum of salary of people whose starts with 'M' "+ limitSalary +" :" + String.format("%.2f",sum));
         }
